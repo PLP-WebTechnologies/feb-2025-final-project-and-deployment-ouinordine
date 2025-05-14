@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Simple Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="blog-excerpt">
+            <h2>First Blog Post</h2>
+            <p class="date">Published on May 14, 2025</p>
+            <img src="https://via.placeholder.com/600x300?text=Blog+Image+1" alt="Blog Post Image 1">
+            <p>This is an excerpt from my first blog post. It talks about [briefly mention the topic]. You can read more by clicking below...</p>
+            <button class="read-more-btn" data-post="1">Read More</button>
+            <div class="comment-section" id="comments-1" style="display: none;">
+                <h3>Comments</h3>
+                <p>No comments yet. Be the first to comment!</p>
+                <textarea placeholder="Your comment..."></textarea>
+                <button>Submit Comment</button>
+            </div>
+            <button class="toggle-comments-btn" data-comments="1">Show Comments</button>
+        </article>
+
+        <article class="blog-excerpt">
+            <h2>Another Interesting Post</h2>
+            <p class="date">Published on May 10, 2025</p>
+            <img src="https://via.placeholder.com/600x300?text=Blog+Image+2" alt="Blog Post Image 2">
+            <p>Here's another snippet from a recent article. This one discusses [briefly mention the topic]. Intrigued? Keep reading!</p>
+            <button class="read-more-btn" data-post="2">Read More</button>
+            <div class="comment-section" id="comments-2" style="display: none;">
+                <h3>Comments</h3>
+                <p>One comment so far: Great post!</p>
+                <textarea placeholder="Your comment..."></textarea>
+                <button>Submit Comment</button>
+            </div>
+            <button class="toggle-comments-btn" data-comments="2">Show Comments</button>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Simple Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
